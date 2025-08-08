@@ -1,102 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechXplosion | Links</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Links - TechXplosion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     body {
-      background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
-      color: #fff;
-      padding: 20px;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+      color: #00f7ff;
+      padding: 0;
     }
 
     header {
       text-align: center;
-      margin-bottom: 30px;
-    }
-
-    header h1 {
+      padding: 1.5rem;
       font-size: 2rem;
-      color: #00fff2;
+      background-color: #101010;
+      box-shadow: 0 0 10px #00f7ff;
     }
 
     .container {
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
     }
 
-    .link-card {
-      background: #1f1f1f;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
+    .link-box {
+      background-color: #121212;
+      border: 1px solid #00f7ff30;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px transparent;
     }
 
-    .link-card:hover {
-      transform: translateY(-5px);
+    .link-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px #00f7ff80;
     }
 
-    .link-card h2 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #00e1ff;
+    .link-box h3 {
+      margin: 0 0 0.5rem;
+      color: #ffffff;
     }
 
-    .link-card a {
-      color: #7cf9ff;
+    .link-box a {
+      color: #00f7ff;
       text-decoration: none;
+      font-size: 1rem;
     }
 
-    .link-card a:hover {
+    .link-box a:hover {
       text-decoration: underline;
     }
 
-    .back-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #00fff2;
-      color: #000;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
     }
 
-    .back-btn:hover {
-      background: #00d0cf;
+    @media (max-width: 600px) {
+      .link-box {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🎥 TechXplosion Video Links</h1>
-    <p>All websites and tools featured in our videos are linked here</p>
-  </header>
+
+  <header>🔗 Video Resource Links</header>
 
   <div class="container">
-    <div class="link-card">
-      <h2>Video 1: Coming Soon</h2>
-      <p>No links yet. Stay tuned for the first video!</p>
+
+    <div class="link-box">
+      <h3>Video 1: "The Starting"</h3>
+      <p>No content yet. Coming soon...</p>
     </div>
-    <!-- You can duplicate this block when adding more videos -->
-    <!--
-    <div class="link-card">
-      <h2>Video 2: Amazing Tool</h2>
-      <p><a href="https://example.com" target="_blank">Visit Tool</a></p>
+
+    <div class="link-box">
+      <h3>Video 2: Speed Up Your PC</h3>
+      <p>No content yet. Coming soon...</p>
     </div>
-    -->
-    <a class="back-btn" href="index.html">⬅ Back to Home</a>
+
+    <div class="link-box">
+      <h3>Video 3: Secret Download Site</h3>
+      <p>No content yet. Coming soon...</p>
+    </div>
+
+
+    <!-- Add more video references below -->
   </div>
+
+  <footer>
+    &copy; 2025 TechXplosion — All rights reserved.
+  </footer>
+
 </body>
 </html>
