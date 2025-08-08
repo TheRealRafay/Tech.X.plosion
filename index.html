@@ -2,140 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechXplosion</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --primary: #0ff;
+      --bg: #0a0a0a;
+      --card-bg: #111;
+      --text: #fff;
+      --accent: #0ff;
+      --hover: #00f7ff;
+    }
+
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(120deg, #0a0a0a, #1f1f1f);
-      color: #00ffe5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       overflow-x: hidden;
     }
 
     header {
-      padding: 40px 20px;
+      background: linear-gradient(to right, #00f7ff, #0ff);
+      padding: 1rem 2rem;
       text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
     }
 
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 20px #00ffe5;
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #101010;
+      padding: 1rem;
+      gap: 2rem;
     }
 
-    section {
-      padding: 80px 20px;
-      min-height: 100vh;
-      text-align: center;
-      border-top: 1px solid rgba(0, 255, 229, 0.1);
-      position: relative;
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-    section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    nav a:hover {
+      color: var(--hover);
     }
 
-    section p {
-      font-size: 1.1rem;
-      opacity: 0.8;
+    main {
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
     }
 
-    .button-glow {
-      margin-top: 30px;
-      padding: 12px 25px;
-      font-size: 1rem;
-      background-color: #00ffe5;
-      color: #000;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 0 15px #00ffe5, 0 0 30px #00ffe5 inset;
-      transition: 0.3s ease;
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s;
     }
 
-    .button-glow:hover {
-      background-color: #000;
-      color: #00ffe5;
-      box-shadow: 0 0 30px #00ffe5;
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent);
+      color: black;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--hover);
     }
 
     footer {
-      padding: 40px 20px;
+      background: #101010;
+      color: #888;
       text-align: center;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #aaa;
-      background-color: #0a0a0a;
     }
 
-    .scroll-btn {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.9rem;
-      opacity: 0.6;
-      color: #00ffe5;
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .card {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>💣 TechXplosion</h1>
-    <p>Exploding your PC's limits. Boosts • Hacks • Secret Sites</p>
-  </header>
-
-  <!-- Videos Section -->
-  <section id="videos">
-    <h2>🎬 Videos</h2>
-    <p>No videos yet. Coming soon!</p>
-    <a href="https://instagram.com/tech.x.plosion" target="_blank">
-      <button class="button-glow">Follow Us on Instagram</button>
-    </a>
-    <div class="scroll-btn">⬇ Scroll down</div>
-  </section>
-
-  <!-- Tips Section -->
-  <section id="tips">
-    <h2>🧠 Tips & Tricks</h2>
-    <p>No tips posted yet. Coming soon!</p>
-    <a href="tips.html">
-      <button class="button-glow">View All Tips</button>
-    </a>
-    <div class="scroll-btn">⬇ Scroll down</div>
-  </section>
-
-  <!-- Links Section -->
-  <section id="links">
-    <h2>🔗 All Our Links</h2>
-    <p>Explore all our socials and important links.</p>
-    <a href="links.html">
-      <button class="button-glow">Visit Links Page</button>
-    </a>
-    <div class="scroll-btn">⬇ Scroll down</div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>ℹ️ About TechXplosion</h2>
-    <p>We share secret websites, tech tricks, PC tutorials, and more.  
-      DM us for paid promotions or collabs on Instagram!</p>
-    <a href="https://instagram.com/tech.x.plosion" target="_blank">
-      <button class="button-glow">📷 Follow us on IG</button>
-    </a>
-  </section>
-
+  <header>💣 TechXplosion</header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="videos.html">Videos</a>
+    <a href="links.html">Links</a>
+    <a href="about.html">About</a>
+  </nav>
+  <main>
+    <div class="card">
+      <h2>Welcome to TechXplosion ⚡</h2>
+      <p>We’re launching a new series that will revive your PC with powerful tools, secret websites, and game download tricks. Stay tuned for the first video drop!</p>
+      <a class="btn" href="https://www.instagram.com/tech.x.plosion">Go to Videos</a>
+    </div>
+    <div class="card">
+      <h2>Links & Tools 🔗</h2>
+      <p>No links available yet. As soon as videos go live, you’ll find all the referenced websites and downloads here.</p>
+      <a class="btn" href="links.html">See All Links</a>
+    </div>
+    <div class="card">
+      <h2>About & Promotions 💼</h2>
+      <p>TechXplosion is a tech movement. We create content that boosts your digital life. DM us on Instagram for paid promotions.</p>
+      <a class="btn" href="about.html">Learn More</a>
+    </div>
+  </main>
   <footer>
-    &copy; 2025 TechXplosion. Built for tech lovers by @tech.x.plosion
+    &copy; 2025 TechXplosion • Website by @tech.x.plosion
   </footer>
-
 </body>
 </html>
