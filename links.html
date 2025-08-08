@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TechXplosion | All Video Links</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechXplosion | Links</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(circle, #111 30%, #000);
-      color: #00ffe5;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      text-shadow: 0 0 10px #00ffe5;
+    body {
+      background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+      color: #fff;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
       margin-bottom: 30px;
     }
 
-    .video-link {
-      width: 90%;
+    header h1 {
+      font-size: 2rem;
+      color: #00fff2;
+    }
+
+    .container {
       max-width: 600px;
-      background: rgba(0,255,229,0.07);
-      border: 1px solid #00ffe540;
+      margin: 0 auto;
+    }
+
+    .link-card {
+      background: #1f1f1f;
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 20px;
-      box-shadow: 0 0 20px #00ffe510;
-      transition: 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
     }
 
-    .video-link:hover {
-      box-shadow: 0 0 30px #00ffe5;
+    .link-card:hover {
+      transform: translateY(-5px);
     }
 
-    .video-title {
-      font-size: 1.3rem;
-      color: #00ffe5;
+    .link-card h2 {
+      font-size: 1.2rem;
       margin-bottom: 10px;
+      color: #00e1ff;
     }
 
-    .coming-soon {
-      font-size: 1rem;
-      color: #ccc;
-    }
-
-    a.home-btn {
-      margin-top: 40px;
-      display: inline-block;
-      background: #00ffe5;
-      color: #000;
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-weight: bold;
+    .link-card a {
+      color: #7cf9ff;
       text-decoration: none;
-      box-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
-      transition: 0.3s ease;
     }
 
-    a.home-btn:hover {
-      background: #00bfa5;
-      color: white;
+    .link-card a:hover {
+      text-decoration: underline;
     }
 
-    footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #666;
-      text-align: center;
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #00fff2;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
-    @media screen and (max-width: 500px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .video-link {
-        padding: 15px;
-      }
-
-      .video-title {
-        font-size: 1.1rem;
-      }
+    .back-btn:hover {
+      background: #00d0cf;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>🎥 TechXplosion Video Links</h1>
+    <p>All websites and tools featured in our videos are linked here</p>
+  </header>
 
-  <h1>📺 All Video Links</h1>
-
-  <div class="video-link">
-    <div class="video-title">🎥 Video 1</div>
-    <div class="coming-soon">No content yet — Coming soon!</div>
+  <div class="container">
+    <div class="link-card">
+      <h2>Video 1: Coming Soon</h2>
+      <p>No links yet. Stay tuned for the first video!</p>
+    </div>
+    <!-- You can duplicate this block when adding more videos -->
+    <!--
+    <div class="link-card">
+      <h2>Video 2: Amazing Tool</h2>
+      <p><a href="https://example.com" target="_blank">Visit Tool</a></p>
+    </div>
+    -->
+    <a class="back-btn" href="index.html">⬅ Back to Home</a>
   </div>
-
-  <div class="video-link">
-    <div class="video-title">🎥 Video 2</div>
-    <div class="coming-soon">No content yet — Coming soon!</div>
-  </div>
-
-  <div class="video-link">
-    <div class="video-title">🎥 Video 3</div>
-    <div class="coming-soon">No content yet — Coming soon!</div>
-  </div>
-
-  <a href="index.html" class="home-btn">⬅ Back to Home</a>
-
-  <footer>
-    &copy; 2025 TechXplosion | All rights reserved
-  </footer>
-
 </body>
 </html>
