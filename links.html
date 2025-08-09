@@ -2,107 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Links - TechXplosion</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
-      color: #00f7ff;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+      color: #fff;
+      overflow-x: hidden;
     }
 
     header {
+      background: rgba(0, 255, 255, 0.1);
+      padding: 1rem;
       text-align: center;
-      padding: 1.5rem;
       font-size: 2rem;
-      background-color: #101010;
-      box-shadow: 0 0 10px #00f7ff;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 0.6rem 1.2rem;
+      background: rgba(0, 255, 255, 0.15);
+      border: 1px solid rgba(0, 255, 255, 0.4);
+      border-radius: 8px;
+      text-decoration: none;
+      color: #00ffff;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(0, 255, 255, 0.3);
+      box-shadow: 0 0 15px #00ffff;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
     }
 
-    .link-box {
-      background-color: #121212;
-      border: 1px solid #00f7ff30;
-      border-radius: 10px;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 0 10px transparent;
+    .link-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .link-box:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 15px #00f7ff80;
+    .link-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
     }
 
-    .link-box h3 {
-      margin: 0 0 0.5rem;
-      color: #ffffff;
+    .link-card h3 {
+      color: #00ffff;
+      margin-bottom: 0.5rem;
     }
 
-    .link-box a {
-      color: #00f7ff;
+    .link-card a {
+      color: #00ffff;
       text-decoration: none;
-      font-size: 1rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 0.5rem;
     }
 
-    .link-box a:hover {
+    .link-card a:hover {
       text-decoration: underline;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #333;
-      margin-top: 3rem;
-    }
-
-    @media (max-width: 600px) {
-      .link-box {
-        padding: 1rem;
+    /* Mobile Layout */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.5rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        width: 90%;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
+  <header>🔗 TechXplosion Links</header>
 
-  <header>🔗 Video Resource Links</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="links.html">Links</a>
+  </nav>
 
   <div class="container">
-
-    <div class="link-box">
-      <h3>Video 1:</h3>
-      <p>No content yet. Coming soon...</p>
+    <div class="link-card">
+      <h3>🎯 Episode 1: Rainmeter</h3>
+      <p>Customise your desktop with amazing Rainmeter skins.</p>
+      <a href="https://www.rainmeter.net/" target="_blank">Official Rainmeter Site</a><br>
+      <a href="https://visualskins.com/" target="_blank">Rainmeter Skins Library</a>
     </div>
 
-    <div class="link-box">
-      <h3>Video 2:</h3>
-      <p>No content yet. Coming soon...</p>
-    </div>
-
-    <div class="link-box">
-      <h3>Video 3:</h3>
-      <p>No content yet. Coming soon...</p>
-    </div>
-
-
-    <!-- Add more video references below -->
+    <!-- Add more episodes here when you upload -->
   </div>
-
-  <footer>
-    &copy; 2025 TechXplosion — All rights reserved.
-  </footer>
-
 </body>
 </html>
-
